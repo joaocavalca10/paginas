@@ -120,3 +120,7 @@ footer p {
         opacity: 1;
     }
 }
+
+.navbar-custom {
+    background-color: #214732; /* Exemplo de cor verde-escuro, ajuste conforme necessário */
+}
