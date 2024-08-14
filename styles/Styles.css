@@ -1,191 +1,191 @@
- body {
-            padding-top: 56px;
-            font-family: 'Arial', sans-serif;
-        }
+body {
+    padding-top: 56px;
+    font-family: 'Arial', sans-serif;
+}
 
-        .hero-section {
-            background: url(/floresta-com-araucarias.jpg) no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            height: 900px;
-        }
+.hero-section {
+    background: url(/floresta-com-araucarias.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    height: 900px;
+}
 
-        .hero-section h1 {
-            font-size: 4rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
+.hero-section h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
 
-        .hero-section p {
-            font-size: 1.5rem;
-            color: #f0f0f0;
-        }
+.hero-section p {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+}
 
-        .navbar-dark .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+.navbar-dark .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-        .navbar-nav .nav-item .nav-link {
-            font-size: 1.2rem;
-            color: #f0f0f0;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        .navbar-nav .nav-item .nav-link:hover,
-        .navbar-nav .nav-item .nav-link:focus {
-            background-color: #004d00;
-            color: #fff;
-        }
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    background-color: #004d00;
+    color: #fff;
+}
 
-        .navbar-toggler {
-            border-color: #004d00;
-        }
+.navbar-toggler {
+    border-color: #004d00;
+}
 
-        .navbar-toggler-icon {
-            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23004d00" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
-        }
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23004d00" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+}
 
-        .dropdown-menu {
-            background-color: #004d00;
-            border: none;
-            border-radius: 0;
-            animation: fadeIn 0.3s ease;
-            min-width: 200px;
-            /* Aumenta a largura do dropdown */
-            transform: translateX(-15px);
-            /* Move o dropdown um pouco para a esquerda */
-        }
+.dropdown-menu {
+    background-color: #004d00;
+    border: none;
+    border-radius: 0;
+    animation: fadeIn 0.3s ease;
+    min-width: 200px;
+    /* Aumenta a largura do dropdown */
+    transform: translateX(-15px);
+    /* Move o dropdown um pouco para a esquerda */
+}
 
-        .dropdown-item {
-            color: #f0f0f0;
-            transition: background-color 0.3s ease;
-        }
+.dropdown-item {
+    color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
 
-        .dropdown-item:hover,
-        .dropdown-item:focus {
-            background-color: #003300;
-            color: #fff;
-        }
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #003300;
+    color: #fff;
+}
 
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: bold;
-            color: #006400;
-            /* Verde escuro */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #006400;
+    /* Verde escuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-        .lead {
-            font-size: 1.25rem;
-        }
+.lead {
+    font-size: 1.25rem;
+}
 
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
-        .card-body p {
-            font-size: 1rem;
-        }
+.card-body p {
+    font-size: 1rem;
+}
 
-        footer p {
-            margin: 0;
-        }
+footer p {
+    margin: 0;
+}
 
-        .conservation-section img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-            border-radius: 10px;
-        }
+.conservation-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
 
-        .section-title,
-        .lead {
-            color: #006400;
-            /* Verde escuro */
-        }
+.section-title,
+.lead {
+    color: #006400;
+    /* Verde escuro */
+}
 
-        .bg-light {
-            background-color: #f0f8ff !important;
-            /* Azul claro */
-        }
+.bg-light {
+    background-color: #f0f8ff !important;
+    /* Azul claro */
+}
 
-        .card {
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-        .card-body {
-            padding: 15px;
-        }
+.card-body {
+    padding: 15px;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-            to {
-                opacity: 1;
-            }
-        }
+    to {
+        opacity: 1;
+    }
+}
 
-        .txts {
-            display: flex;
-            flex: auto;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-        }
+.txts {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 
-        .txt-01 {
-            flex: 1;
-            text-align: justify;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
+.txt-01 {
+    flex: 1;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
-        .arm {
-            display: flex;
-            flex: auto;
-            padding-bottom: 5rem;
+.arm {
+    display: flex;
+    flex: auto;
+    padding-bottom: 5rem;
 
-        }
+}
 
-        .ajs-img-01 {
-            flex: 1;
-            margin-right: 20px;
-            display: flex;
-            border-radius: 15px;
-            padding-left: 15px;
-        }
+.ajs-img-01 {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    border-radius: 15px;
+    padding-left: 15px;
+}
 
-        .ajs-img-01 img {
-            max-width: 100%;
-            max-height: 100%;
-        }
+.ajs-img-01 img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
-        /* Estilo para imagens com efeito de hover */
-        .conservation-section img,
-        .ajs-img-01 img,
-        .card-img-top {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+/* Estilo para imagens com efeito de hover */
+.conservation-section img,
+.ajs-img-01 img,
+.card-img-top {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .conservation-section img:hover,
-        .ajs-img-01 img:hover,
-        .card-img-top:hover {
-            transform: scale(1.1);
-            /* Aumenta a imagem em 10% */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            /* Adiciona uma sombra */
-        }
+.conservation-section img:hover,
+.ajs-img-01 img:hover,
+.card-img-top:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Adiciona uma sombra */
+}
