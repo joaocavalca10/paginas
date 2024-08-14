@@ -1,47 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubra a beleza e a importância das araucárias e o bioma que as sustenta.">
     <title>Araucárias - Página Informativa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="/paginas/styles/Styles.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-   
-</style>
+    <!-- Incluindo o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            background: url(/floresta-com-araucarias.jpg) no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            height: 900px;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            color: #f0f0f0;
+        }
+
+        .navbar-dark .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover,
+        .navbar-nav .nav-item .nav-link:focus {
+            background-color: #004d00;
+            color: #fff;
+        }
+
+        .navbar-toggler {
+            border-color: #004d00;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23004d00" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+
+        .dropdown-menu {
+            background-color: #004d00;
+            border: none;
+            border-radius: 0;
+            animation: fadeIn 0.3s ease;
+            min-width: 200px;
+            /* Aumenta a largura do dropdown */
+            transform: translateX(-15px);
+            /* Move o dropdown um pouco para a esquerda */
+        }
+
+        .dropdown-item {
+            color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            background-color: #003300;
+            color: #fff;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #006400;
+            /* Verde escuro */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .lead {
+            font-size: 1.25rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .conservation-section img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .section-title,
+        .lead {
+            color: #006400;
+            /* Verde escuro */
+        }
+
+        .bg-light {
+            background-color: #f0f8ff !important;
+            /* Azul claro */
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .txts {
+            display: flex;
+            flex: auto;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .txt-01 {
+            flex: 1;
+            text-align: justify;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .arm {
+            display: flex;
+            flex: auto;
+            padding-bottom: 5rem;
+
+        }
+
+        .ajs-img-01 {
+            flex: 1;
+            margin-right: 20px;
+            display: flex;
+            border-radius: 15px;
+            padding-left: 15px;
+        }
+
+        .ajs-img-01 img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Estilo para imagens com efeito de hover */
+        .conservation-section img,
+        .ajs-img-01 img,
+        .card-img-top {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .conservation-section img:hover,
+        .ajs-img-01 img:hover,
+        .card-img-top:hover {
+            transform: scale(1.1);
+            /* Aumenta a imagem em 10% */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Adiciona uma sombra */
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
-    <div class="container-fluid">
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Araucárias</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#conservation">Conservação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Galeria</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Início</a>
+                        <a class="dropdown-item" href="#about">Sobre</a>
+                        <a class="dropdown-item" href="#conservation">Conservação</a>
+                        <a class="dropdown-item" href="#gallery">Galeria</a>
+                    </div>
                 </li>
             </ul>
         </div>
-    </div>
-</nav>
+    </nav>
 
+    <!-- Seção Hero -->
     <header class="hero-section">
         <div class="container">
             <h1>Araucárias</h1>
@@ -49,47 +237,117 @@
         </div>
     </header>
 
+    <!-- Seção Sobre -->
     <section id="about" class="py-5">
-        <div class="container">
+        <div class="container txts">
             <h2 class="section-title">Sobre as Araucárias</h2>
-            <p class="lead">Flora: A araucária, também conhecida como pinheiro-do-paraná, é a espécie mais emblemática e
-                predominante deste bioma. No entanto, a flora do bioma de Araucária é extremamente diversificada,
-                apresentando uma rica variedade de espécies. Entre as árvores, destacam-se o imbuia, que é valorizado
-                pela sua madeira resistente e de alta qualidade; o camboatá, uma árvore de médio porte com folhas
-                compostas; e o cedro, que também possui madeira de grande valor comercial. Além das árvores, a vegetação
-                inclui uma vasta quantidade de samambaias, que são plantas vasculares sem sementes, bem como orquídeas e
-                bromélias, que são conhecidas por suas flores ornamentais e adaptações ecológicas. Essas plantas
-                contribuem para a biodiversidade e complexidade do bioma, oferecendo abrigo e alimento para diversas
-                espécies animais.</p>
+            <div class="arm">
+                <div class="txt-01">
+                    <p class="lead">
+                    <h2>Flora:</h2>
+                    </p>
+                    <p>
+                        A araucária, também conhecida como pinheiro-do-paraná, é a espécie mais emblemática e
+                        predominante deste bioma, simbolizando a riqueza natural da região. Esta árvore imponente pode
+                        atingir alturas impressionantes, criando uma paisagem única e majestosa, especialmente nas áreas
+                        de maior altitude. No entanto, a flora do bioma de Araucária vai muito além dessa espécie
+                        icônica, revelando uma diversidade surpreendente de plantas que coexistem em harmonia.
+                    </p>
+                    <p>
+                        Entre as árvores que compõem este bioma, destaca-se a imbuia, uma espécie de madeira nobre
+                        extremamente valorizada por sua resistência e durabilidade. Sua madeira é amplamente utilizada
+                        na fabricação de móveis de alta qualidade, além de ser empregada na construção civil. Outro
+                        exemplo notável é o camboatá, uma árvore de médio porte que se distingue por suas folhas
+                        compostas e que desempenha um papel importante na preservação do ecossistema local. O cedro, com
+                        sua madeira de grande valor comercial, também é uma presença marcante, sendo altamente apreciado
+                        na marcenaria e no artesanato.
 
-            <p class="lead">Fauna: A fauna do bioma de Araucária é notavelmente rica em espécies endêmicas, ou seja,
-                espécies que só podem ser encontradas nessa região específica. Entre os animais mais conhecidos estão o
-                papagaio-de-peito-roxo, uma ave que se destaca por sua plumagem vibrante e que está ameaçada de extinção
-                devido à perda de habitat e ao tráfico ilegal. O esquilo é outro exemplo de espécie adaptada a este
-                bioma, conhecido por sua agilidade e capacidade de armazenar alimentos para o inverno. A gralha-azul é
-                uma ave emblemática, famosa por sua contribuição na dispersão das sementes de araucária, desempenhando
-                um papel crucial na regeneração da floresta. O bioma também abriga diversas espécies de mamíferos, como
-                o paca e o cateto, bem como répteis e insetos que são parte fundamental da cadeia alimentar e dos
-                processos ecológicos do ambiente.</p>
-
-            <p class="lead">Clima: O clima do bioma de Araucária é caracterizado por ser subtropical úmido. Isso
-                significa que a região experimenta uma boa quantidade de precipitação ao longo do ano, com um padrão de
-                chuvas bem distribuído. As temperaturas variam significativamente entre as estações: no verão, os
-                termômetros podem chegar a ultrapassar os 25°C, enquanto no inverno, as temperaturas podem cair abaixo
-                de 0°C, especialmente nas áreas de maior altitude. A precipitação média anual varia entre 1.500 a 2.000
-                mm, contribuindo para o desenvolvimento contínuo da vegetação e a manutenção dos corpos d'água que
-                sustentam a fauna local.</p>
-
-            <p class="lead">Solo: Os solos do bioma de Araucária são geralmente férteis, especialmente nas áreas de
-                planalto, onde predominam os latossolos e nitossolos. Estes solos são profundos e ricos em matéria
-                orgânica, resultado da decomposição de uma densa camada de serrapilheira formada pelas folhas caídas das
-                araucárias e outras árvores. A fertilidade do solo é crucial para a diversidade da vegetação, suportando
-                uma ampla variedade de plantas herbáceas e arbustivas. No entanto, práticas agrícolas inadequadas e a
-                exploração madeireira podem ameaçar a qualidade do solo, levando à degradação se não forem adotadas
-                práticas de manejo sustentável.</p>
+                    </p>
+                </div>
+                <div class="ajs-img-01">
+                    <img src="images.jpg" flora" style="border-radius: 30px;">
+                </div>
+            </div>
+            <div class="arm">
+                <div class="ajs-img-01">
+                    <img src="Floresta com Araucaria_Page_6.jpg" flora" style="border-radius: 30px;">
+                </div>
+                <div class="txt-01">
+                    <p class="lead">
+                    <h2>Fauna:</h2>
+                    </p>
+                    <p> A fauna do bioma de Araucária é notavelmente rica e diversificada, abrigando um grande número de
+                        espécies endêmicas, ou seja, espécies que são encontradas exclusivamente nessa região. Esta
+                        riqueza de vida animal é um reflexo da complexidade e diversidade dos habitats que compõem o
+                        bioma, desde as copas altas das araucárias até o sub-bosque denso e úmido.
+                    </p>
+                    <p>
+                        Entre os animais mais conhecidos que habitam o bioma, destaca-se o papagaio-de-peito-roxo, uma
+                        ave de plumagem vibrante que fascina pela beleza de suas cores e pelo seu comportamento social.
+                        Infelizmente, essa espécie está seriamente ameaçada de extinção devido à destruição de seu
+                        habitat natural e à captura ilegal para o comércio de aves exóticas. A conservação desse
+                        papagaio tornou-se uma prioridade para ambientalistas e pesquisadores, que trabalham para
+                        proteger as áreas remanescentes de floresta e combater o tráfico de animais.
+                    </p>
+                </div>
+            </div>
+            <div class="arm">
+                <div class="txt-01">
+                    <p class="lead">
+                    <h2>Clima:</h2>
+                    </p>
+                    <p>O clima do bioma de Araucária é predominantemente subtropical úmido, caracterizado por uma
+                        quantidade significativa de precipitação distribuída ao longo do ano. Essa abundância de chuvas
+                        é essencial para manter a exuberância da vegetação e a vitalidade dos ecossistemas presentes na
+                        região. A distribuição uniforme das chuvas contribui para a estabilidade dos corpos d'água, como
+                        rios e lagoas, que são fundamentais para a sobrevivência da fauna local e para a manutenção da
+                        biodiversidade.
+                    </p>
+                    <p>
+                        As temperaturas no bioma de Araucária variam consideravelmente entre as estações, refletindo as
+                        características climáticas típicas de uma região subtropical. Durante o verão, os termômetros
+                        frequentemente registram temperaturas que ultrapassam os 25°C, criando um ambiente relativamente
+                        quente e favorável ao crescimento acelerado das plantas. No entanto, é no inverno que o clima do
+                        bioma revela sua face mais rigorosa. As temperaturas podem cair abaixo de 0°C, especialmente nas
+                        áreas de maior altitude, onde geadas são comuns e a neve pode ocorrer ocasionalmente, criando
+                        paisagens de rara beleza.
+                    </p>
+                </div>
+                <div class="ajs-img-01">
+                    <img src="Clima.jpg" flora" style="border-radius: 30px;">
+                </div>
+            </div>
+            <div class="arm">
+                <div class="ajs-img-01">
+                    <img src="Solo_4k.jpg" flora" style="border-radius: 30px;">
+                </div>
+                <div class="txt-01">
+                    <p class="lead">
+                    <h2>Solo:</h2>
+                    </p>
+                    <p>
+                        Os solos do bioma de Araucária são conhecidos por sua fertilidade, especialmente nas áreas de
+                        planalto, onde predominam os latossolos e nitossolos. Esses tipos de solo são profundos, bem
+                        drenados e ricos em nutrientes, características que os tornam ideais para sustentar a vegetação
+                        diversificada do bioma. A fertilidade do solo é, em grande parte, resultado da constante
+                        decomposição de uma espessa camada de serrapilheira, composta principalmente pelas folhas caídas
+                        das araucárias e outras árvores. Esse processo natural de reciclagem de nutrientes contribui
+                        para a formação de um solo rico em matéria orgânica, essencial para o crescimento saudável das
+                        plantas.
+                    </p>
+                    <p>
+                        Os latossolos, comuns nas áreas de planalto, são solos antigos que possuem uma alta capacidade
+                        de retenção de água e nutrientes, o que os torna particularmente favoráveis ao desenvolvimento
+                        de florestas densas e produtivas. Já os nitossolos, também presentes nessas regiões, são
+                        conhecidos por sua estrutura granular e boa drenagem, características que favorecem tanto a
+                        vegetação nativa quanto as atividades agrícolas.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
+    
     <section id="conservation" class="bg-light py-5 conservation-section">
         <div class="container">
             <h2 class="section-title">Conservação das Araucárias</h2>
